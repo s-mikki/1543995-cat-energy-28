@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+<body>
+<header class="header">
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a class="navigation__link" href="#"></a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="#"></a>
+            </li>
+            <li class="navigation__item">
+                <button class="navigation__button">бургер</button>
+                <div class="navigation__links">
+                    <a class="navigation__link" href="#">Главная</a>
+                    <a class="navigation__link" href="#">Каталог продукции</a>
+                    <a class="navigation__link" href="#">Подбор программы</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <section class="section">
+        <form class="form" action="#">
+            <div class="form__container">
+                <h1 class="form__title">Подбор программы</h1>
+                <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+            </div>
+            <fieldset class="form__fieldset-border form-date">
+                <label class="form-date__label">
+                    <span class="form-date__text">Имя:*</span>
+                    <input class="form-date__input" type="text" name="name" placeholder="Барсик" required>
+                </label>
+                <label class="form-date__label">
+                    <span class="form-date__text">Вес (кг):*</span>
+                    <input class="form-date__input" type="text" name="heft" placeholder="7" required>
+                </label>
+                <label class="form-date__label">
+                    <span class="form-date__text">Возраст (лет):</span>
+                    <input class="form-date__input" type="email" name="year" placeholder="7">
+                </label>
+            </fieldset>
+            <fieldset class="form__fieldset-border custom-radio">
+                <label class="custom-radio__label">
+                    <input class="custom-radio__input" type="radio" name="Жильё" value="похудение" checked="">
+                    <span class="custom-radio__text">похудение</span>
+                </label>
+                <label class="custom-radio__label">
+                    <input class="custom-radio__input" type="radio" name="Жильё" value="массы">
+                    <span class="custom-radio__text">Набор массы</span>
+                </label>
+                <label class="custom-radio__label">
+                    <input class="custom-radio__input" type="radio" name="Жильё" value="совет">
+                    <span class="custom-radio__text">Не знаю (Нужен ваш совет)</span>
+                </label>
+            </fieldset>
+            <fieldset class="form__fieldset-border form-contact">
+                <legend class="form-contact__legend">Контактные данные (владельца кота)</legend>
+                <label class="form-contact__label">
+                    <span class="form-contact__text">E-mail:*</span>
+                    <input class="form-contact__input" type="text" name="name" placeholder="kuklachev@gmail.com" required>
+                </label>
+                <label class="form-contact__label">
+                    <span class="form-contact__text">Телефон:*</span>
+                    <input class="form-contact__input" type="tel" name="heft" placeholder="8 (960) 900-60-90" required>
+                </label>
+            </fieldset>
+            <fieldset class="form__fieldset-border form-comment">
+                <legend class="form-comment__legend">Комментарии</legend>
+                <label class="form-comment__label">
+                    <textarea class="form-comment__massage" name="message" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </label>
+            </fieldset>
+            <fieldset class="form__fieldset-border form-extra">
+                <legend class="form-extra__legend">Дополнительно</legend>
+                <label class="form-extra__label">
+                    <input class="form-extra__input" type="checkbox" name="Жильё" value="похудение" checked="">
+                    <span class="form-extra__text">сахарозаменитель</span>
+                </label>
+                <label class="form-extra__label">
+                    <input class="form-extra__input" type="checkbox" name="Жильё" value="массы">
+                    <span class="form-extra__text">питьевая вода</span>
+                </label>
+                <label class="form-extra__label">
+                    <input class="form-extra__input" type="checkbox" name="Жильё" value="совет">
+                    <span class="form-extra__text">молоко</span>
+                </label>
+                <label class="form-extra__label">
+                    <input class="form-extra__input" type="checkbox" name="Жильё" value="совет">
+                    <span class="form-extra__text">витамины</span>
+                </label>
+            </fieldset>
+            <button class="button" type="submit">отправить заявку</button>
+            <p class="form__text">* — Обязательные поля</p>
+        </form>
+    </section>
+    <section class="section contacts">
+        <div class="contacts__container">
+            <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
+            <span class="contacts__text">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts__text">Санкт-Петербург</span>
+        </div>
+        <img class="contacts__map" src="#" alt="">
+    </section>
+</main>
+<footer class="footer">
+    <div class="footer__container">
+        <img class="footer__img" src="#" alt="">
+        <div class="social">
+            <a class="social__link" href="" target="_blank">
+                <svg class="social__icon"></svg>
+            </a>
+            <a class="social__link" href="" target="_blank">
+                <svg class="social__icon"></svg>
+            </a>
+            <a class="social__link" href="" target="_blank">
+                <svg class="social__icon"></svg>
+            </a>
+        </div>
+        <div class="partner">
+            <a class="partner__link" href="#" target="_blank">
+            </a>
+            <a class="partner__link" href="#" target="_blank">
+            </a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
