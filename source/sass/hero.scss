@@ -1,0 +1,39 @@
+.hero {
+  padding: 0 20px;
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    color: var(--white);
+  }
+
+  &__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 27px 0 0 0;
+  }
+
+  &__subtitle {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 auto;
+  }
+
+  &__img {
+    margin: 29px 0 0 0;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    padding: 8px 44px;
+    background-color: var(--green);
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,27 @@
+.main {
+  &-index {
+    background-image: url("../img/cat-index-background.png");
+    background-repeat: no-repeat;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+//@media (width: 780px) {
+//  .main {
+//    &-index {
+//      background-image: url("../img/cat-index-background.png");
+//      background-repeat: no-repeat;
+//
+//      &__container {
+//        display: flex;
+//        flex-direction: column;
+//        gap: 100px;
+//      }
+//    }
+//  }
+//}

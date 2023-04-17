@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local("Lato Regular"), local("Lato-Regular"),
+  url("../fonts/lato/lato-regular.woff2") format("woff2"),
+  url("../fonts/lato/lato-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local("Oswald Regular"), local("Oswald-Regular"),
+  url("../fonts/oswald/oswaldregular.woff2") format("woff2"),
+  url("../fonts/oswald/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: local("Oswald Medium"), local("Oswald-Medium"),
+  url("../fonts/oswald/oswaldmedium.woff2") format("woff2"),
+  url("../fonts/oswald/oswaldmedium.woff") format("woff");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+:root {
+  --dark-grey: #444444;
+  --white: #FFFFFF;
+  --green: #68B738;
+  --dark-silver: #F2F2F2;
+  --black: #000000;
+  --silver: #D9D9D9;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  text-decoration: none;
+  border: none;
+  background-color: initial;
+  cursor: pointer;
+  outline: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--white);
+  margin: 0;
+  padding: 0;
+}
+
+@import "header.scss";
+@import "main.scss";
+@import "body.scss";
+@import "navigation.scss";
+@import "hero.scss";
+@import "catalog.scss";
+@import "about-product.scss";
+@import "example.scss";
+@import "contacts.scss";
+@import "footer.scss";
+@import "partner.scss";
+@import "social.scss";
+@import "additionally.scss";
+@import "promotion.scss";
+@import "form.scss";
+
+.hidden {
+  display: none;
+}

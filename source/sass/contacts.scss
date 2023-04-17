@@ -1,0 +1,36 @@
+.contacts {
+
+  &__content {
+    padding: 26px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    text-transform: uppercase;
+    color: #111111;
+    max-width: 139px;
+  }
+
+  &__text {
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    color: #444444;
+  }
+}
+
+.main-catalog .contacts {
+  background-color:  #F2F2F2;
+}
+
+.main-form .contacts {
+  background-color:  #F2F2F2;
+}
