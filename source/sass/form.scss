@@ -9,21 +9,21 @@
   }
 
   &__title {
-    font-family: 'Oswald', "Arial", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 36px;
-    color: #000000;
-    margin: 0
+    color: var(--black);
+    margin: 0;
   }
 
   &__subtitle {
-    font-family: 'Oswald', "Arial", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
-    color: #000000;
+    color: var(--black);
     margin: 0;
     max-width: 226px;
   }
@@ -39,13 +39,13 @@
     flex-direction: column;
     gap: 14px;
 
-    &:after {
-      content: '';
+    &::after {
+      content: "";
       margin: 10px -20px 0;
       height: 0;
       width: 320px;
       display: block;
-      border: 1px solid #D9D9D9;
+      border: 1px solid var(--silver);
     }
 
     &__label {
@@ -56,34 +56,34 @@
 
     &__input {
       padding: 14px 20px;
-      border: 1px solid #E7E7E7;
+      border: 1px solid var(--silver-1);
       font-family: "Oswald", "Arial", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
       width: 100%;
-      color: #444444;
+      color: var(--brown);
     }
 
     &__input::placeholder {
-      font-family: 'Oswald', "Arial", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
-      color: #444444;
+      color: var(--brown);
       text-transform: uppercase;
     }
 
     &__text {
-      font-family: 'Oswald', "Arial", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
       text-transform: uppercase;
-      color: #444444;
+      color: var(--brown);
       flex-shrink: 0;
     }
   }
@@ -96,23 +96,23 @@
     &__legend {
       display: flex;
       align-items: center;
-      font-family: 'Oswald', "Arial", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-weight: 400;
       font-size: 24px;
       line-height: 26px;
-      color: #000000;
+      color: var(--black);
       gap: 14px;
       flex-shrink: 0;
       margin: 0 0 35px 0;
     }
 
-    &__legend:after {
-      content: '';
+    &__legend::after {
+      content: "";
       margin: 0 -20px 0 0;
       height: 0;
       width: 99px;
       display: block;
-      border: 2px solid #68B738;
+      border: 2px solid var(--green);
     }
 
     &__label {
@@ -122,35 +122,35 @@
     }
 
     &__text {
-      font-family: 'Oswald', "Arial", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
       text-transform: uppercase;
-      color: #444444;
+      color: var(--brown);
       flex-shrink: 0;
     }
 
     &__input {
       padding: 14px 20px;
-      border: 1px solid #E7E7E7;
-      font-family: 'Oswald', "Arial", sans-serif;
+      border: 1px solid var(--silver-1);
+      font-family: "Oswald", "Arial", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
-      color: #444444;
+      color: var(--brown);
       width: 100%;
     }
 
     &__input::placeholder {
-      font-family: 'Oswald', "Arial", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
-      color: #444444;
+      color: var(--brown);
       text-transform: uppercase;
     }
   }
@@ -161,13 +161,13 @@
     gap: 13px;
     padding: 22px 0 19px;
 
-    &:after {
-      content: '';
+    &::after {
+      content: "";
       margin: 6px -20px 0;
       height: 0;
       width: 320px;
       display: block;
-      border: 1px solid #D9D9D9;
+      border: 1px solid var(--silver);
     }
 
     &__label {
@@ -177,12 +177,12 @@
     }
 
     &__text {
-      font-family: 'Oswald', "Arial", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
       text-transform: uppercase;
-      color: #222222;
+      color: var(--dark-grey);
     }
 
     &__input {
@@ -192,23 +192,22 @@
     &__indicator {
       width: 30px;
       height: 30px;
-      border: 1px solid #CDCDCD;
+      border: 1px solid var(--silver-3);
       border-radius: 50%;
       position: relative;
     }
 
-    &__input:checked + &__indicator:after {
+    &__input:checked + &__indicator::after {
       content: "";
       position: absolute;
       width: 13px;
       height: 13px;
-      background-color: #68B738;
+      background-color: var(--green);
       border-radius: 50%;
       top: 50%;
       margin-top: -6.5px;
       left: 50%;
       margin-left: -6.5px;
-
     }
   }
 
@@ -219,42 +218,43 @@
       display: flex;
       gap: 23px;
       align-items: center;
-      font-family: 'Oswald', "Arial", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 24px;
       line-height: 26px;
       margin: 0 0 38px 0;
-
-      &:after {
-        content: '';
-        margin: 0 -20px 0 0;
-        height: 0;
-        width: 99px;
-        display: block;
-        border: 2px solid #68B738;
-      }
     }
+
+    &__legend::after {
+      content: "";
+      margin: 0 -20px 0 0;
+      height: 0;
+      width: 99px;
+      display: block;
+      border: 2px solid var(--green);
+    }
+
     &__massage {
       width: 100%;
       height: 150px;
       padding: 10px 0 0 15px;
-      font-family: 'Oswald', "Arial", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
-      color: #444444;
-      border: 1px solid #E7E7E7;
+      color: var(--brown);
+      border: 1px solid var(--silver-1);
+    }
 
-      &::placeholder {
-        font-family: 'Oswald', "Arial", sans-serif;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 18px;
-        text-transform: uppercase;
-        color: #444444;
-      }
+    &__maasage::placeholder {
+      font-family: "Oswald", "Arial", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 18px;
+      text-transform: uppercase;
+      color: var(--brown);
     }
   }
 
@@ -268,21 +268,21 @@
       display: flex;
       gap: 23px;
       align-items: center;
-      font-family: 'Oswald', "Arial", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 24px;
       line-height: 26px;
       margin: 0 0 34px 0;
+    }
 
-      &:after {
-        content: '';
-        margin: 0 -20px 0 0;
-        height: 0;
-        width: 99px;
-        display: block;
-        border: 2px solid #68B738;
-      }
+    &__legend::after {
+      content: "";
+      margin: 0 -20px 0 0;
+      height: 0;
+      width: 99px;
+      display: block;
+      border: 2px solid var(--green);
     }
 
     &__container {
@@ -310,11 +310,11 @@
       position: relative;
       width: 30px;
       height: 30px;
-      border: 1px solid #CDCDCD;
+      border: 1px solid var(--silver-3);
       padding: 2px;
     }
 
-    &__input:checked + &__indicator:after {
+    &__input:checked + &__indicator::after {
       content: "";
       position: absolute;
       background-image: url("../img/tick.svg");
@@ -325,7 +325,7 @@
     }
 
     &__text {
-      font-family: 'Oswald', "Arial", sans-serif;
+      font-family: "Oswald", "Arial", sans-serif;
       font-weight: 400;
       font-size: 16px;
       line-height: 18px;
@@ -334,7 +334,7 @@
   }
 
   &__button {
-    font-family: 'Oswald', "Arial", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -342,12 +342,12 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    background: #68B738;
+    background: var(--green);
     padding: 14px;
   }
 
   &__text {
-    font-family: 'Lato', "Arial", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;

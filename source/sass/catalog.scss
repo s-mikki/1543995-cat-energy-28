@@ -1,6 +1,7 @@
 .catalog {
 
   padding: 0 20px;
+
   &__heading {
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
@@ -18,31 +19,31 @@
     gap: 25px;
   }
 
-  &__item:before {
-    content: '';
+  &__item::before {
+    content: "";
     margin: 0 -20px 19px;
     height: 1px;
     width: 320px;
     display: block;
-    background-color: #EBEBEB;
+    background-color: var(--palepink);
   }
 
-  &-more:before {
-    content: '';
+  &-more::before {
+    content: "";
     margin: 0 -20px;
     height: 1px;
     width: 320px;
     display: block;
-    background-color: #EBEBEB;
+    background-color: var(--palepink);
   }
 
-  &-more:after {
-    content: '';
+  &-more::after {
+    content: "";
     margin: 0 -20px;
     height: 1px;
     width: 320px;
     display: block;
-    background-color: #EBEBEB;
+    background-color: var(--palepink);
   }
 
   &__container {
@@ -68,12 +69,12 @@
   &-price {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    font-family: 'Lato', "Arial", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    color: #444444;
+    color: var(--brown);
     min-width: 140px;
 
     &__text:nth-child(2n) {
@@ -88,13 +89,13 @@
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    background-color: #68B738;
+    background-color: var(--green);
     padding: 10px 0;
 
     &--grey {
       width: 100%;
-      background-color: #F2F2F2;
-      color: #444444;
+      background-color: var(--dark-silver);
+      color: var(--brown);
     }
   }
 
@@ -135,7 +136,7 @@
       font-weight: 400;
       font-size: 12px;
       line-height: 16px;
-      color: #444444;
+      color: var(--brown);
       margin: 0;
     }
   }
@@ -143,6 +144,7 @@
   &-preview {
 
     padding: 0 20px;
+
     &__list {
       display: flex;
       flex-direction: column;
@@ -179,12 +181,12 @@
       margin: 22px 0 15px 0;
     }
 
-    &__subtitle:after {
-      content: '';
+    &__subtitle::after {
+      content: "";
       margin: 23px 0 0 0;
       width: 100%;
       display: block;
-      border: 1px solid #D9D9D9;
+      border: 1px solid var(--silver);
     }
 
     &__content {

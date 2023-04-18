@@ -1,5 +1,4 @@
 .contacts {
-
   &__content {
     padding: 26px 20px;
     display: flex;
@@ -13,7 +12,7 @@
     line-height: 20px;
     margin: 0;
     text-transform: uppercase;
-    color: #111111;
+    color: var(--black-1);
     max-width: 139px;
   }
 
@@ -23,14 +22,14 @@
     font-size: 14px;
     line-height: 20px;
     margin: 0;
-    color: #444444;
+    color: var(--brown);
   }
 }
 
 .main-catalog .contacts {
-  background-color:  #F2F2F2;
+  background-color: var(--dark-silver);
 }
 
 .main-form .contacts {
-  background-color:  #F2F2F2;
+  background-color: var(--dark-silver);
 }

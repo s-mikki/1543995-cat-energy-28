@@ -29,7 +29,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: #222222;
+      background-color: var(--dark-grey);
       transition: all 0.5s;
     }
 
@@ -58,13 +58,12 @@
 }
 
 .menu-button {
-
-  &:before {
+  &::before {
     content: "";
     width: 100%;
     display: block;
     height: 0;
-    border: 1px solid #E6E6E6;
+    border: 1px solid var(--silver-2);
   }
 
   &__link {
@@ -85,11 +84,11 @@
     list-style: none;
   }
 
-  &__link:after {
+  &__link::after {
     content: "";
     width: 100%;
     display: block;
     height: 0;
-    border: 1px solid #E6E6E6;
+    border: 1px solid var(--silver-2);
   }
 }

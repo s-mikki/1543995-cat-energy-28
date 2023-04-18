@@ -1,6 +1,6 @@
 .footer {
   padding: 0 20px;
-  background-color: #F2F2F2;
+  background-color: var(--dark-silver);
 
   &__container {
     display: flex;
@@ -15,8 +15,8 @@
   }
 
   &__line {
-    content: '';
+    content: "";
     width: 100%;
-    border: 1px solid #D9D9D9;
+    border: 1px solid var(--silver);
   }
 }
