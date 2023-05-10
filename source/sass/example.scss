@@ -2,77 +2,78 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: var(--white-1);
+  background-color: $white-1;
   margin: 0;
   padding: 25px 20px 40px;
+}
 
-  &__content-container {
-    display: flex;
-    gap: 32px;
-  }
+.example__content-container {
+  display: flex;
+  margin-bottom: 32px;
+}
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
+.example__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 
-  &__heading {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 40px;
-    margin: 0;
-    padding: 0;
-  }
+.example__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+}
 
-  &__text {
-    margin: 0;
-    padding: 0;
-    font-family: "Lato", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-  }
+.example__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
 
-  &__title {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 24px;
-    margin: 0;
-    padding: 15px 0 0 0;
-    text-transform: uppercase;
-  }
+.example__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  padding: 15px 0 0 0;
+  text-transform: uppercase;
+}
 
-  &__subtitle {
-    margin: 0 0 -23px 0;
-    padding: 0;
-    font-family: "Lato", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    max-width: 87px;
-    text-align: center;
-    background-color: var(--white-1);
-  }
+.example__subtitle {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  max-width: 87px;
+  text-align: center;
+  padding: 0 5px;
+  margin: 0 0 -20px 0;
+  background-color: $white-1;
+}
 
-  &__content {
-    border: 1px solid var(--silver-3);
-    border-radius: 3px;
-    min-width: 124px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-  }
+.example__content {
+  border: 1px solid $special-grey;
+  border-radius: 3px;
+  min-width: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
 
-  &__preview {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    margin: 20px auto 0;
-    text-transform: uppercase;
-  }
+.example__preview {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
