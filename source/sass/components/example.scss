@@ -9,7 +9,8 @@
 
 .example__content-container {
   display: flex;
-  margin-bottom: 32px;
+  gap: 32px;
+  margin: 0 0 14px 0;
 }
 
 .example__container {
@@ -19,60 +20,53 @@
 }
 
 .example__heading {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+  @include oswald(36px, 40px, 400);
+  color: $black;
   margin: 0;
   padding: 0;
 }
 
 .example__text {
+  @include lato(14px, 18px, 400);
+  color: $spacial-dark-grey;
   margin: 0;
   padding: 0;
-  font-family: "Lato", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
 }
 
 .example__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
+  @include oswald(24px, 24px, 400);
+  color: $black;
   margin: 0;
   padding: 15px 0 0 0;
   text-transform: uppercase;
 }
 
 .example__subtitle {
-  font-family: "Lato", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  max-width: 87px;
+  @include lato(12px, 12px, 400);
+  color: $black;
+  position: absolute;
+  max-width: 77px;
   text-align: center;
   padding: 0 5px;
-  margin: 0 0 -20px 0;
+  margin: 0;
+  top: 46px;
   background-color: $white-1;
 }
 
 .example__content {
-  border: 1px solid $special-grey;
+  border: 1px solid $spacial-grey;
   border-radius: 3px;
-  min-width: 124px;
+  width: 124px;
+  height: 56px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  position: relative;
 }
 
 .example__preview {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  @include oswald(14px, 20px, 400);
   margin: 0;
   text-align: center;
   text-transform: uppercase;

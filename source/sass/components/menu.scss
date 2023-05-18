@@ -19,7 +19,7 @@
     width: 100%;
     display: block;
     height: 0;
-    border: 1px solid var(--silver-2);
+    border: 1px solid $silver-2;
   }
 }
 
@@ -30,12 +30,9 @@
 }
 
 .menu-button__link span {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
+  @include oswald(20px, 20px, 500);
   text-transform: uppercase;
-  color: var(--black);
+  color: $black;
   padding: 22px 0 24px;
   margin: 0 auto;
   list-style: none;
@@ -45,6 +42,6 @@
     width: 100%;
     display: block;
     height: 0;
-    border: 1px solid var(--silver-2);
+    border: 1px solid $silver-2;
   }
 }

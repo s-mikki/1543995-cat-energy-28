@@ -3,10 +3,7 @@
 }
 
 .about-product__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 40px;
+  @include oswald(36px, 40px, 400);
   margin: 0 0 40px 0;
   padding: 0;
 }
@@ -17,6 +14,7 @@
   gap: 20px;
   list-style: none;
   padding: 0 0 49px 0;
+  margin: 0;
 }
 
 .about-product__item {
@@ -26,14 +24,17 @@
 }
 
 .about-product__text {
-  font-family: "Lato", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  @include lato(14px, 18px, 400);
+  color: $spacial-dark-grey;
   margin: 0;
 }
 
-.about-product__img {
+.about-product__back {
+  background-color: #68b738;
+  width: 60px;
+  height: 60px;
+  display: flex;
   flex-shrink: 0;
-  align-self: flex-start;
+  justify-content: center;
+  align-items: center;
 }

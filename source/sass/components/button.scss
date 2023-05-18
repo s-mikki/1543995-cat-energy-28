@@ -1,0 +1,11 @@
+.button {
+  @include oswald(14px, 18px, 400);
+  color: $white;
+  text-decoration: none;
+  border: none;
+  background-color: $basic-green;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}

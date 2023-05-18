@@ -1,14 +1,12 @@
 .partner {
   display: flex;
   align-items: center;
+  width: 100%;
   justify-content: space-between;
 }
 
 .partner__text {
-  font-family: "Lato", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  @include lato(16px, 19px, 400);
   color: $spacial-dark-grey;
   margin: 0;
 }

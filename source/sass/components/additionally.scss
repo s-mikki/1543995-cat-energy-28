@@ -1,29 +1,22 @@
 .additionally {
   padding: 25px 20px 0;
-  overflow: scroll;
 }
 
 .additionally__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
+  @include oswald(24px, 24px, 400);
   margin: 0 0 36px 0;
+  position: relative;
 
   &::after {
     content: "";
-    height: 2px;
     min-width: 100vw;
     border: 2px solid $basic-green;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
   }
 }
 
 .additionally__title span {
-  background: white;
-  display: block;
   padding-right: 20px;
 }
 
@@ -41,10 +34,9 @@
     height: 1px;
     width: 100%;
     display: block;
-    background-color: var(--palepink);
+    background-color: $palepink;
   }
 }
-
 
 .additionally__item {
   display: flex;
@@ -57,19 +49,15 @@
     height: 1px;
     width: 100%;
     display: block;
-    background-color: var(--palepink);
+    background-color: $spacial-grey;
   }
-
 }
 
 .additionally__text {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
+  @include oswald(16px, 16px, 400);
+  color: $dark-grey;
   text-transform: uppercase;
   margin: 0;
-  color: var(--dark-grey);
 }
 
 .additionally-price {
@@ -78,19 +66,15 @@
 }
 
 .additionally-price__text {
-  font-family: "Lato", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
+  @include lato(14px, 14px, 400);
   color: $spacial-dark-grey;
 }
 
 .additionally__button {
+  @include lato(16px, 20px, 400);
+  color: $white;
   display: flex;
   justify-content: center;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
   text-transform: uppercase;
   background-color: $basic-green;
   padding: 10px 0;
