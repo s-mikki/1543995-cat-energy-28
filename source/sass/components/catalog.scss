@@ -23,15 +23,17 @@
   max-width: 76px;
 }
 
-.catalog__item::before {
-  content: "";
-  height: 1px;
-  display: block;
-  background-color: $palepink;
-  position: absolute;
-  left: 50%;
-  width: 100vw;
-  transform: translateX(-50%);
+.catalog__item {
+  &::before {
+    content: "";
+    height: 1px;
+    display: block;
+    background-color: $palepink;
+    position: absolute;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+  }
 }
 
 .catalog__container {

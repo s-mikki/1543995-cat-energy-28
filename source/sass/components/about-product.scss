@@ -30,11 +30,12 @@
 }
 
 .about-product__back {
-  background-color: #68b738;
+  background-color: $basic-green;
   width: 60px;
   height: 60px;
   display: flex;
   flex-shrink: 0;
+  align-self: flex-start;
   justify-content: center;
   align-items: center;
 }

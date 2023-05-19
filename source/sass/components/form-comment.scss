@@ -31,6 +31,8 @@
   line-height: 18px;
   color: $spacial-dark-grey;
   border: 1px solid $silver-1;
+  margin: 0;
+  resize: vertical;
 
   &::placeholder {
     font-family: "Oswald", "Arial", sans-serif;
@@ -41,4 +43,3 @@
     color: $spacial-dark-grey;
   }
 }
-
