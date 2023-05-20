@@ -1,0 +1,25 @@
+.contacts__content {
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__title {
+  @include oswald(16px, 20px, 400);
+  color: $black-1;
+  margin: 0;
+  text-transform: uppercase;
+  max-width: 139px;
+}
+
+.contacts__text {
+  @include lato(14px, 20px, 400);
+  color: $spacial-dark-grey;
+  margin: 0;
+}
+
+.contacts {
+  &--background {
+    background-color: $basic-grey;
+  }
+}

@@ -1,0 +1,13 @@
+@mixin lato($size, $height, $weight) {
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}
+
+@mixin oswald($size, $height, $weight) {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+}

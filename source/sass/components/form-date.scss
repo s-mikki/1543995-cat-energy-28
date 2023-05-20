@@ -1,0 +1,42 @@
+
+.form-date {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  &::after {
+    content: "";
+    margin: 10px -20px 0;
+    height: 0;
+    width: 320px;
+    display: block;
+    border: 1px solid $silver;
+  }
+}
+
+.form-date__label {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.form-date__input {
+  @include oswald(16px, 18px, 400);
+  padding: 14px 20px;
+  border: 1px solid $silver-1;
+  width: 100%;
+  color: $spacial-dark-grey;
+
+  &::placeholder {
+    @include oswald(16px, 18px, 400);
+    color: $spacial-dark-grey;
+    text-transform: uppercase;
+  }
+}
+
+.form-date__text {
+  @include oswald(16px, 18px, 400);
+  text-transform: uppercase;
+  color: $spacial-dark-grey;
+  flex-shrink: 0;
+}

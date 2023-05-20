@@ -1,0 +1,67 @@
+.hero__container {
+  display: grid;
+  justify-items: center;
+}
+
+.hero__header {
+  position: relative;
+  background-image: url("../img/cat-index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto calc(100% - 135px);
+  background-position: top;
+  padding: 27px 20px 299px 20px;
+  grid-area: 1 / -1;
+  width: 100%;
+  min-height: 302px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+  color: $white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 135px);
+    background-color: rgba(104, 183, 56, 0.85);
+    z-index: 1;
+  }
+}
+
+.hero__title {
+  @include oswald(36px, 36px, 400);
+  padding: 0;
+  margin: 0;
+  z-index: 3;
+}
+
+.hero__subtitle {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  z-index: 3;
+}
+
+.hero__img {
+  display: grid;
+  position: relative;
+  margin: 0;
+  grid-area: 1 / -1;
+  align-self: end;
+  z-index: 3;
+}
+
+.hero__button {
+  display: flex;
+  justify-content: center;
+  padding: 8px 44px;
+  background-color: $basic-green;
+  text-transform: uppercase;
+  margin: 0;
+  width: 100%;
+  max-width: 280px;
+}

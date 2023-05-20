@@ -1,0 +1,17 @@
+.footer {
+  padding: 0 20px;
+  background-color: $basic-grey;
+  flex: 0 0 auto;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.footer__img {
+  display: block;
+}

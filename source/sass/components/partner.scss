@@ -1,0 +1,16 @@
+.partner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.partner__text {
+  @include lato(16px, 19px, 400);
+  color: $spacial-dark-grey;
+  margin: 0;
+}
+
+.partner__link {
+  text-decoration: none;
+}

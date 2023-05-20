@@ -1,0 +1,82 @@
+.additionally {
+  padding: 25px 20px 0;
+  overflow: hidden;
+}
+
+.additionally__title {
+  @include oswald(24px, 24px, 400);
+  margin: 0 0 36px 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    min-width: 100vw;
+    border: 2px solid $basic-green;
+    position: absolute;
+    top: 50%;
+  }
+}
+
+.additionally__title span {
+  padding-right: 20px;
+}
+
+.additionally__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+
+  &::after {
+    content: "";
+    margin: 0;
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: $palepink;
+  }
+}
+
+.additionally__item {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+
+  &::before {
+    content: "";
+    margin: 0;
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: $spacial-grey;
+  }
+}
+
+.additionally__text {
+  @include oswald(16px, 16px, 400);
+  color: $dark-grey;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.additionally-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.additionally-price__text {
+  @include lato(14px, 14px, 400);
+  color: $spacial-dark-grey;
+}
+
+.additionally__button {
+  @include lato(16px, 20px, 400);
+  color: $white;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  background-color: $basic-green;
+  padding: 10px 0;
+}
